@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: chunpark <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/18 17:06:35 by chunpark          #+#    #+#             */
+/*   Updated: 2024/03/18 18:39:53 by chunpark         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
 int ft_handle_specifier(const char **format, va_list args)
@@ -20,9 +32,9 @@ int ft_handle_specifier(const char **format, va_list args)
     else if (**format == 'p')
         count += ft_putaddr(va_arg(args, void *));
     else if (**format == 'X')
-        count += ft_puthex_upper(va_arg(args, int));
+        count += ft_puthex_upper(va_arg(args, unsigned int));
     else if (**format == 'x')
-        count += ft_puthex_lower(va_arg(args, int));
+        count += ft_puthex_lower(va_arg(args, unsigned int));
     return (count);
 }
 

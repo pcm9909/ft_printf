@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: chunpark <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/18 17:06:41 by chunpark          #+#    #+#             */
+/*   Updated: 2024/03/18 18:39:29 by chunpark         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
@@ -7,8 +19,8 @@
 int ft_putchar(char c);
 int ft_putstr(char *str);
 int ft_putnbr(int n);
-int ft_puthex_lower(int n);
-int ft_puthex_upper(int n);
+int ft_puthex_lower(unsigned int n);
+int ft_puthex_upper(unsigned int n);
 int ft_putui(unsigned int n);
 int ft_convert_addr(unsigned long long n);
 int ft_putaddr(void *addr);
