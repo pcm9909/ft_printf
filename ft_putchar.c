@@ -6,17 +6,17 @@
 /*   By: chunpark <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/18 17:02:03 by chunpark          #+#    #+#             */
-/*   Updated: 2024/03/18 17:32:06 by chunpark         ###   ########.fr       */
+/*   Updated: 2024/03/19 19:07:38 by chunpark         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_putchar(char c)
+int	ft_putchar(char c)
 {
 	if (c == '\0')
 		write (1, &c, 1);
 	else
 		write(1, &c, 1);
-    return (1);
+	return (1);
 }
